@@ -16,6 +16,11 @@ var defaults = {
   , rgb : ''
 }
 
+var proxy = process.env.HTTPS_PROXY
+ || process.env.https_proxy
+ || process.env.HTTP_PROXY
+ || process.env.http_proxy;
+
 // main function with callback
 function Pantone(options, callback) {
 
@@ -44,6 +49,9 @@ function Pantone(options, callback) {
   self.options = _.defaults(self.options, defaults)
 
   // send request
+  if (proxy) {
+    request = request.defaults({ proxy: proxy, timeout: 5000 });
+  }
   request({ url: url, qs: self.options }, sendRequest(self))
 
 }
