@@ -1,10 +1,11 @@
 {
     "name": "pantone"
   , "description": "Find the nearest PMS color using hex or rgb colors from CLI or as a dependency."
-  , "version": "0.0.3"
+  , "version": "0.0.4"
   , "author": "Nick Baugh <niftylettuce@gmail.com>"
   , "contributors": [
       { "name": "Nick Baugh", "email": "niftylettuce@gmail.com" }
+      { "name": "Radu Micu", "email": "radu.micu@gmail.com" }
     ]
   , "keywords": [ "pantone", "pms", "color", "chart", "printing" ]
   , "homepage": "https://github.com/teelaunch/pms-pantone-color-chart"
