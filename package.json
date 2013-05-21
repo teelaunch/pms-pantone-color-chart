@@ -4,7 +4,7 @@
   , "version": "0.0.4"
   , "author": "Nick Baugh <niftylettuce@gmail.com>"
   , "contributors": [
-      { "name": "Nick Baugh", "email": "niftylettuce@gmail.com" }
+      { "name": "Nick Baugh", "email": "niftylettuce@gmail.com" },
       { "name": "Radu Micu", "email": "radu.micu@gmail.com" }
     ]
   , "keywords": [ "pantone", "pms", "color", "chart", "printing" ]
