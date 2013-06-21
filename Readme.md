@@ -116,6 +116,45 @@ function hexCallback(err, results) {
 }
 ```
 
+## Proxy settings
+For all of you who are behind a proxy server we are using the `process.env` property from node to take the value from `HTTP_PROXY` or `HTTPS_PROXY` in order to make the call to the server. This means that you need to set those properties as environment variables (it's a good things anyways because lots of other apps are using this property).
+
+### Windows
+1. Right-click My Computer, and then click Properties.
+2. Click the Advanced tab \ Advanced system settings.
+3. Click Environment variables.
+4. Under `System variables` Click New to add a new variable name and value.
+5. Variable name: `http_proxy`
+6. Variable value: `http://proxy-server.mycorp.com:8080` (replace the value with your details, the general syntax is: `http://username:password@proxyhost:port/ `)
+7. Click OK and save your changes
+
+Now if everything went down OK you should be able to use Pantone.
+
+### Ubuntu (various Linux distributions)
+
+> Notice: I tested this on a VM locally and worked perfectly but might not work for you depending on various factors, so if you have more knowledge please submit a pull request, or let us know and we can update this readme file.
+
+If you want to use a proxy server only once in one terminal window use this command:
+
+`export http_proxy=http://proxy-server.mycorp.com:8080`
+
+If you want a more permanent solution:
+
+Put the environment variable into the global `/etc/environment` file:
+
+`http_proxy=http://proxy-server.mycorp.com:8080`
+
+Execute `source /etc/environment` in every shell where you want the variables to be updated:
+
+`$ source /etc/environment`
+
+Check that it works:
+
+    $ echo $http_proxy
+    $ http://proxy-server.mycorp.com:8080
+
+
+More info here: [https://help.ubuntu.com/community/EnvironmentVariables](https://help.ubuntu.com/community/EnvironmentVariables "https://help.ubuntu.com/community/EnvironmentVariables")
 
 ## Notice
 
