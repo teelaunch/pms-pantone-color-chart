@@ -1,7 +1,7 @@
 {
     "name": "pantone"
   , "description": "Find the nearest PMS color using hex or rgb colors from CLI or as a dependency."
-  , "version": "0.0.4"
+  , "version": "0.0.5"
   , "author": "Nick Baugh <niftylettuce@gmail.com>"
   , "contributors": [
       { "name": "Nick Baugh", "email": "niftylettuce@gmail.com" },
