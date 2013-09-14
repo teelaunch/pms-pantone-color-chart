@@ -1,4 +1,3 @@
-
 # PMS Pantone® Color Chart <sup>[![Version Badge](http://vb.teelaun.ch/teelaunch/pms-pantone-color-chart.svg)](https://npmjs.org/package/pantone)</sup>
 
 Find the nearest PMS color using hex or rgb colors from command line or as a dependency.
@@ -117,7 +116,7 @@ function hexCallback(err, results) {
 ```
 
 ## Proxy settings
-For all of you who are behind a proxy server we are using the `process.env` property from node to take the value from `HTTP_PROXY` or `HTTPS_PROXY` in order to make the call to the server. This means that you need to set those properties as environment variables (it's a good things anyways because lots of other apps are using this property).
+For all of you who are behind a proxy server we are using the `process.env` property from node to take the value from `HTTP_PROXY` or `HTTPS_PROXY` in order to make the call to the server. This means that you need to set those properties as environment variables (it's a good thing anyways because lots of other apps are using this property).
 
 ### Windows
 1. Right-click My Computer, and then click Properties.
